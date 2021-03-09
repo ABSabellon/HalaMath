@@ -20,20 +20,14 @@ export default class extends Phaser.Scene {
       },
       active: this.fontsLoaded
     })
-     //
+    
     // load your assets
-    //
-    //Logo Title
-    this.load.spritesheet('gs_title', 'assets/game/ui/title/sp_gs_title.png',{
-      frameWidth: 1200,
-      frameHeight: 475
-    })
 
-    //Btns
-    this.load.spritesheet('btn_play', 'assets/game/test/btns1.png',{
-      frameWidth: 182,
-      frameHeight: 191
-    })
+    //load atlass
+    this.load.atlas('gs_title', 'assets/game/sprites/title.png','assets/game/sprites/title.json' )
+    this.load.atlas('btns_main', 'assets/game/sprites/btns_main.png','assets/game/sprites/btns_main.json' )    
+    this.load.atlas('btns_Others', 'assets/game/sprites/btns_others.png','assets/game/sprites/btns_others.json' )    
+    this.load.atlas('testers', 'assets/game/sprites/testers.png','assets/game/sprites/testers.json' )
 
     //Background
     this.load.image('gs_bg', 'assets/game/test/bg.png')

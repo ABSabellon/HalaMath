@@ -5,14 +5,36 @@ export default class extends Phaser.Scene {
     super({ key: 'TitleScene' })
   }
 
+  preload(){
+    //load animation
+
+    this.anims.create({
+      key: 'moveTitle',
+      frameRate: 10,
+      frames: this.anims.generateFrameNames('gs_title',{
+        prefix: 'sp_title_mov',
+        suffix: '.png',
+        start: 1,
+        end: 40
+      }),
+      repeat : -1,
+    })
+  }
+
   create () {
-    let title = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.30, 'gs_title').setDepth(1) 
+
+    //create title
+    var title = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.30, 'gs_title', 'sp_title_mov1.png').setDepth(1)  
     title.displayWidth = 700
     title.scaleY = title.scaleX
+    title.play('moveTitle')
     
+
+    //create background
     this.add.image(0, 0, 'gs_bg').setOrigin(0).setDepth(0)
 
-    let btn_play = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.60, 'btn_play').setDepth(1)
+    //create buttons
+    var btn_play = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.60, 'btns_main','btn_right000.png').setDepth(1)
     btn_play.displayWidth = 80
     btn_play.scaleY = btn_play.scaleX
 
@@ -25,7 +47,6 @@ export default class extends Phaser.Scene {
      *    pointerup - click and release
      *    pointerdown - just click 
      */
-
 
     btn_play.setInteractive()
 

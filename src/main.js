@@ -15,5 +15,4 @@ class Game extends Phaser.Game {
     super(gameConfig)
   }
 }
-
 window.game = new Game()

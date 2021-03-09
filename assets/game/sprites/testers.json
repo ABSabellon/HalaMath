@@ -1,0 +1,345 @@
+{
+	"textures": [
+		{
+			"image": "testers.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1004,
+				"h": 703
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "ent_fruit_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 58
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 66,
+						"h": 58
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "ent_fruit_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 58
+					},
+					"frame": {
+						"x": 69,
+						"y": 1,
+						"w": 66,
+						"h": 58
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_fifty.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 137,
+						"y": 1,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_five_hundred.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 354,
+						"y": 1,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_five_thousand.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 571,
+						"y": 1,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_one_hundred.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 788,
+						"y": 1,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_one_thousand.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 1,
+						"y": 183,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_ones.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 218,
+						"y": 183,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_random.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 435,
+						"y": 183,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "pv_ten.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 180
+					},
+					"frame": {
+						"x": 652,
+						"y": 183,
+						"w": 215,
+						"h": 180
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "ov_scrollbar.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 3,
+						"h": 412
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 412
+					},
+					"frame": {
+						"x": 869,
+						"y": 183,
+						"w": 3,
+						"h": 412
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "ov_fruitbaskets.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 99,
+						"h": 429
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 99,
+						"h": 429
+					},
+					"frame": {
+						"x": 874,
+						"y": 183,
+						"w": 99,
+						"h": 429
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				},
+				{
+					"filename": "ov_do_math.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 750,
+						"h": 445
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 55,
+						"w": 688,
+						"h": 337
+					},
+					"frame": {
+						"x": 1,
+						"y": 365,
+						"w": 688,
+						"h": 337
+					},
+					"anchor": {
+						"x": 0.48743719,
+						"y": 0.49302326
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:7345fd7d47fae8ccc5962f6f95b33c37:7738f2a718e8a6acef774aeb5fcf5b78:adaaab85998d733ba669aa5f09eea48a$"
+	}
+}
