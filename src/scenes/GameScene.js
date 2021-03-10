@@ -1,5 +1,6 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
+import mathPopUp from '../popUp/mathPopUp'
 
 export default class extends Phaser.Scene {
   constructor () {
@@ -13,10 +14,11 @@ export default class extends Phaser.Scene {
   }
   
   preload () {
-
+    
   }
 
   cloneSprite (index) {
+
     var clone = this.add.sprite(this.fruitsConf[index].x, this.fruitsConf[index].y, this.fruitsConf[index].atlas, this.fruitsConf[index].atlasKey).setDepth(3).setInteractive();
     this.input.setDraggable(clone);
     clone.on('pointerdown', (pointer) => {
@@ -33,11 +35,19 @@ export default class extends Phaser.Scene {
 
   create () {
     //create background
-    this.add.image(0, 0, 'gs_bg').setOrigin(0).setDepth(0);
-    
-    // Math Overlay (Will move this to an overlay / pop up window later)
-    var math = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.40, 'testers','ov_do_math.png').setDepth(1);
+    this.add.image(0, 0, 'gs_bg').setOrigin(0).setDepth(0);    
 
+    //popUp Button PlaceHolder
+    var popUP = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.50, 'btns_main','btn_right001.png').setDepth(1)
+    popUP.displayWidth = 80
+    popUP.scaleY = popUP.scaleX
+
+    popUP.setInteractive()
+    popUP.on("pointerup", () =>{
+      this.openWindow(mathPopUp)       
+    })
+
+    //fruit draggable
     this.fruitsConf.map((conf, index) => {
       var fruit = this.add.sprite(conf.x, conf.y, conf.atlas,conf.atlasKey).setDepth(3).setInteractive();
       this.input.setDraggable(fruit);
@@ -70,5 +80,30 @@ export default class extends Phaser.Scene {
         gameObject.clearTint();
     });
  
+  }
+
+  openWindow(func){
+
+    var x = Phaser.Math.Between(400, 600);
+    var y = Phaser.Math.Between(64, 128);
+
+    var handle = 'window' + this.count++;
+
+    var win = this.add.zone(x, y, func.WIDTH, func.HEIGHT).setInteractive().setOrigin(0).setDepth(1);
+
+    var popUpWin = new func(handle, win);
+
+    this.input.setDraggable(win);
+
+    win.on('drag', function (pointer, dragX, dragY) {
+
+        this.x = dragX;
+        this.y = dragY;
+
+        popUpWin.refresh()
+
+    });
+
+    this.scene.add(handle, popUpWin, true);
   }
 }

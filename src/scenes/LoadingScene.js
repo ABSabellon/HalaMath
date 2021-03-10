@@ -38,7 +38,9 @@ export default class extends Phaser.Scene {
 
   update () {
     if (this.fontsReady) {
-      this.scene.start('TitleScene')
+     // this.scene.start('TitleScene')
+      
+      this.scene.start('GameScene')
     }
   }
 
