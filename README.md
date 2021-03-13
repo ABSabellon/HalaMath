@@ -1,6 +1,6 @@
 # HalaMath - Emergence-based Educational Serious Game for Lower Elementary Large Number Arithmetic
 
-![HalaMath Header](https://github.com/ABSabellon/HalaMath/blob/main/assets/game/ui/title/HalamathGameLogo.gif)
+![HalaMath Header](https://github.com/ABSabellon/HalaMath/blob/main/assets/title/lg_title.gif)
 
 HalaMath is an emergence-based educational serious game focused on grade 3 Math curriculum for addition and subtraction of large numbers.
 
