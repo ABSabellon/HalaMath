@@ -35,10 +35,11 @@ export default class extends Phaser.Scene {
 
   create () {
     //create background
-    this.add.image(0, 0, 'gs_bg').setOrigin(0).setDepth(0);    
+    var title = this.add.image(0, 0, 'gs_bg').setOrigin(0).setDepth(0)
+    title.setScale(0.2)  
 
     //popUp Button PlaceHolder
-    var popUP = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.50, 'btns_main','btn_right001.png').setDepth(1)
+    var popUP = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.50, 'btns','btn_play00.png').setDepth(1)
     popUP.displayWidth = 80
     popUP.scaleY = popUP.scaleX
 

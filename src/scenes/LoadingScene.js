@@ -11,8 +11,8 @@ export default class extends Phaser.Scene {
     this.fontsLoaded = this.fontsLoaded.bind(this)
     this.add.text(100, 100, 'loading fonts...')
 
-    this.load.image('loaderBg', './assets/images/loader-bg.png')
-    this.load.image('loaderBar', './assets/images/loader-bar.png')
+   // this.load.image('loaderBg', './assets/images/loader-bg.png')
+   // this.load.image('loaderBar', './assets/images/loader-bar.png')
 
     WebFont.load({
       google: {
@@ -25,12 +25,13 @@ export default class extends Phaser.Scene {
 
     //load atlass
     this.load.atlas('gs_title', 'assets/game/sprites/title.png','assets/game/sprites/title.json' )
-    this.load.atlas('btns_main', 'assets/game/sprites/btns_main.png','assets/game/sprites/btns_main.json' )    
-    this.load.atlas('btns_Others', 'assets/game/sprites/btns_others.png','assets/game/sprites/btns_others.json' )    
+    this.load.atlas('btns', 'assets/game/sprites/buttons.png','assets/game/sprites/buttons.json' )   
+    this.load.atlas('elems', 'assets/game/sprites/elements.png','assets/game/sprites/elements.json' )  
+    this.load.atlas('windows', 'assets/game/sprites/windows.png','assets/game/sprites/windows.json' )  
     this.load.atlas('testers', 'assets/game/sprites/testers.png','assets/game/sprites/testers.json' )
 
     //Background
-    this.load.image('gs_bg', 'assets/game/test/bg.png')
+    this.load.image('gs_bg', 'assets/game/sprites/bg.png')
 
     //audio
     this.load.audio('bgm_title', 'assets/game/audio/soundtrack/bgm_title.mp3')
@@ -38,9 +39,9 @@ export default class extends Phaser.Scene {
 
   update () {
     if (this.fontsReady) {
-     // this.scene.start('TitleScene')
+      this.scene.start('TitleScene')
       
-      this.scene.start('GameScene')
+     // this.scene.start('GameScene')
     }
   }
 

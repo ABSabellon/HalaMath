@@ -21,5 +21,5 @@ export default {
     autoCenter: Phaser.Scale.CENTER_BOTH,
     parent: 'content'
   },
-  pixelArt: true
+  pixelArt: false
 }
