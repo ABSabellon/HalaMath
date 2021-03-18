@@ -64,6 +64,24 @@ export default class extends Phaser.Scene {
       console.log("You Toucha My BAGUETTE!")     
     })
 
+    //NPC Happiness
+
+    var happy= this.add.sprite((this.game.renderer.width / 2) - 2 , 45, 'elems', 'element_faveBlank.png').setDepth(2)
+    happy.setScale(0.39)
+
+    var happyMeter= this.add.sprite((this.game.renderer.width / 2) - 2 , 41, 'elems', 'element_health01.png').setDepth(2)
+    happyMeter.setScale(0.39)
+    
+    var happyLiner= this.add.sprite((this.game.renderer.width / 2) - 2 , 41, 'elems', 'element_meterOverlay.png').setDepth(2)
+    happyLiner.setScale(0.39)
+
+    var happyHeart= this.add.sprite((this.game.renderer.width / 2)  + 98 , 41, 'elems', 'element_iconHealth01.png').setDepth(3)
+    happyHeart.setScale(0.3)
+
+    var happyHeartGrey= this.add.sprite((this.game.renderer.width / 2)  - 100 , 41, 'elems', 'element_iconHealth02.png').setDepth(3)
+    happyHeartGrey.setScale(0.3)
+    
+
     //Left Fruits
 
     var mathFruitLeftOnes = this.add.sprite(this.game.renderer.width * 0.39 , this.game.renderer.height* 0.33, 'windows', 'window_completeIconArea.png').setDepth(2)

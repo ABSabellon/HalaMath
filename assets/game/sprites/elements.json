@@ -4,8 +4,8 @@
 			"image": "elements.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 2018,
-				"h": 1877
+				"w": 2043,
+				"h": 1899
 			},
 			"scale": 1,
 			"frames": [
@@ -178,6 +178,27 @@
 					}
 				},
 				{
+					"filename": "element_faveBlank.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 548,
+						"h": 110
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 548,
+						"h": 110
+					},
+					"frame": {
+						"x": 1,
+						"y": 1628,
+						"w": 548,
+						"h": 110
+					}
+				},
+				{
 					"filename": "element_shield00.png",
 					"rotated": false,
 					"trimmed": false,
@@ -193,9 +214,51 @@
 					},
 					"frame": {
 						"x": 1,
-						"y": 1628,
+						"y": 1740,
 						"w": 519,
 						"h": 133
+					}
+				},
+				{
+					"filename": "element_contentArea.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 475,
+						"h": 144
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 475,
+						"h": 144
+					},
+					"frame": {
+						"x": 1556,
+						"y": 1,
+						"w": 475,
+						"h": 144
+					}
+				},
+				{
+					"filename": "element_energy00.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 493,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 493,
+						"h": 151
+					},
+					"frame": {
+						"x": 1017,
+						"y": 138,
+						"w": 493,
+						"h": 151
 					}
 				},
 				{
@@ -213,52 +276,10 @@
 						"h": 110
 					},
 					"frame": {
-						"x": 1,
-						"y": 1763,
+						"x": 1512,
+						"y": 147,
 						"w": 485,
 						"h": 110
-					}
-				},
-				{
-					"filename": "element_sliderHorizontal.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 599,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 599,
-						"h": 46
-					},
-					"frame": {
-						"x": 1017,
-						"y": 138,
-						"w": 599,
-						"h": 46
-					}
-				},
-				{
-					"filename": "element_diamond.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 366,
-						"h": 131
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 366,
-						"h": 131
-					},
-					"frame": {
-						"x": 1556,
-						"y": 1,
-						"w": 366,
-						"h": 131
 					}
 				},
 				{
@@ -283,45 +304,24 @@
 					}
 				},
 				{
-					"filename": "element_energy00.png",
+					"filename": "element_sliderHorizontal.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 493,
-						"h": 151
+						"w": 599,
+						"h": 46
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 493,
-						"h": 151
+						"w": 599,
+						"h": 46
 					},
 					"frame": {
 						"x": 986,
-						"y": 186,
-						"w": 493,
-						"h": 151
-					}
-				},
-				{
-					"filename": "element_contentArea.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 475,
-						"h": 144
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 475,
-						"h": 144
-					},
-					"frame": {
-						"x": 986,
-						"y": 339,
-						"w": 475,
-						"h": 144
+						"y": 291,
+						"w": 599,
+						"h": 46
 					}
 				},
 				{
@@ -346,6 +346,27 @@
 					}
 				},
 				{
+					"filename": "element_diamond.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 366,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 366,
+						"h": 131
+					},
+					"frame": {
+						"x": 986,
+						"y": 339,
+						"w": 366,
+						"h": 131
+					}
+				},
+				{
 					"filename": "element_time.png",
 					"rotated": false,
 					"trimmed": false,
@@ -361,7 +382,7 @@
 					},
 					"frame": {
 						"x": 986,
-						"y": 485,
+						"y": 472,
 						"w": 359,
 						"h": 136
 					}
@@ -424,7 +445,7 @@
 					},
 					"frame": {
 						"x": 986,
-						"y": 623,
+						"y": 610,
 						"w": 359,
 						"h": 130
 					}
@@ -445,7 +466,7 @@
 					},
 					"frame": {
 						"x": 985,
-						"y": 755,
+						"y": 742,
 						"w": 324,
 						"h": 151
 					}
@@ -487,30 +508,51 @@
 					},
 					"frame": {
 						"x": 1050,
-						"y": 908,
+						"y": 895,
 						"w": 225,
 						"h": 262
 					}
 				},
 				{
-					"filename": "element_actionBlank00.png",
+					"filename": "element_energy01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 224,
-						"h": 262
+						"w": 368,
+						"h": 47
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 224,
-						"h": 262
+						"w": 368,
+						"h": 47
 					},
 					"frame": {
-						"x": 1347,
-						"y": 485,
-						"w": 224,
-						"h": 262
+						"x": 1587,
+						"y": 259,
+						"w": 368,
+						"h": 47
+					}
+				},
+				{
+					"filename": "element_health01.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 368,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 368,
+						"h": 47
+					},
+					"frame": {
+						"x": 1587,
+						"y": 308,
+						"w": 368,
+						"h": 47
 					}
 				},
 				{
@@ -577,69 +619,6 @@
 					}
 				},
 				{
-					"filename": "element_iconPlaceholder.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 312,
-						"h": 110
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 312,
-						"h": 110
-					},
-					"frame": {
-						"x": 1618,
-						"y": 134,
-						"w": 312,
-						"h": 110
-					}
-				},
-				{
-					"filename": "element_energy01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 368,
-						"h": 47
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 368,
-						"h": 47
-					},
-					"frame": {
-						"x": 522,
-						"y": 1697,
-						"w": 368,
-						"h": 47
-					}
-				},
-				{
-					"filename": "element_health01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 368,
-						"h": 47
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 368,
-						"h": 47
-					},
-					"frame": {
-						"x": 522,
-						"y": 1746,
-						"w": 368,
-						"h": 47
-					}
-				},
-				{
 					"filename": "element_shield01.png",
 					"rotated": false,
 					"trimmed": false,
@@ -654,31 +633,73 @@
 						"h": 47
 					},
 					"frame": {
-						"x": 488,
-						"y": 1795,
+						"x": 551,
+						"y": 1697,
 						"w": 368,
 						"h": 47
 					}
 				},
 				{
-					"filename": "element_toggleRadioBlank.png",
+					"filename": "element_iconHealth01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 93,
-						"h": 102
+						"w": 170,
+						"h": 152
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 93,
-						"h": 102
+						"w": 170,
+						"h": 152
 					},
 					"frame": {
-						"x": 1924,
-						"y": 1,
-						"w": 93,
-						"h": 102
+						"x": 522,
+						"y": 1746,
+						"w": 170,
+						"h": 152
+					}
+				},
+				{
+					"filename": "element_iconHealth02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 152
+					},
+					"frame": {
+						"x": 694,
+						"y": 1746,
+						"w": 170,
+						"h": 152
+					}
+				},
+				{
+					"filename": "element_actionBlank00.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 224,
+						"h": 262
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 224,
+						"h": 262
+					},
+					"frame": {
+						"x": 1354,
+						"y": 339,
+						"w": 224,
+						"h": 262
 					}
 				},
 				{
@@ -696,73 +717,10 @@
 						"h": 262
 					},
 					"frame": {
-						"x": 1277,
-						"y": 908,
+						"x": 1580,
+						"y": 357,
 						"w": 224,
 						"h": 262
-					}
-				},
-				{
-					"filename": "element_textBlank.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 312,
-						"h": 109
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 312,
-						"h": 109
-					},
-					"frame": {
-						"x": 1050,
-						"y": 1172,
-						"w": 312,
-						"h": 109
-					}
-				},
-				{
-					"filename": "element_iconSkull.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 147,
-						"h": 151
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 147,
-						"h": 151
-					},
-					"frame": {
-						"x": 1311,
-						"y": 755,
-						"w": 147,
-						"h": 151
-					}
-				},
-				{
-					"filename": "element_iconCash.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 115,
-						"h": 165
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 115,
-						"h": 165
-					},
-					"frame": {
-						"x": 1481,
-						"y": 186,
-						"w": 115,
-						"h": 165
 					}
 				},
 				{
@@ -780,8 +738,8 @@
 						"h": 262
 					},
 					"frame": {
-						"x": 1598,
-						"y": 246,
+						"x": 1806,
+						"y": 357,
 						"w": 224,
 						"h": 262
 					}
@@ -801,52 +759,10 @@
 						"h": 262
 					},
 					"frame": {
-						"x": 1573,
-						"y": 510,
+						"x": 1347,
+						"y": 603,
 						"w": 224,
 						"h": 262
-					}
-				},
-				{
-					"filename": "element_level.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 181,
-						"h": 216
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 181,
-						"h": 216
-					},
-					"frame": {
-						"x": 1824,
-						"y": 246,
-						"w": 181,
-						"h": 216
-					}
-				},
-				{
-					"filename": "element_sliderVertical.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 40,
-						"h": 374
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 374
-					},
-					"frame": {
-						"x": 1799,
-						"y": 510,
-						"w": 40,
-						"h": 374
 					}
 				},
 				{
@@ -864,8 +780,8 @@
 						"h": 262
 					},
 					"frame": {
-						"x": 1503,
-						"y": 774,
+						"x": 1573,
+						"y": 621,
 						"w": 224,
 						"h": 262
 					}
@@ -885,77 +801,35 @@
 						"h": 262
 					},
 					"frame": {
-						"x": 1503,
-						"y": 1038,
+						"x": 1799,
+						"y": 621,
 						"w": 224,
 						"h": 262
 					}
 				},
 				{
-					"filename": "element_skill00.png",
+					"filename": "element_sliderVertical.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 174,
-						"h": 160
+						"w": 40,
+						"h": 374
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 174,
-						"h": 160
+						"w": 40,
+						"h": 374
 					},
 					"frame": {
-						"x": 1841,
-						"y": 464,
-						"w": 174,
-						"h": 160
+						"x": 1277,
+						"y": 895,
+						"w": 40,
+						"h": 374
 					}
 				},
 				{
-					"filename": "element_skill01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 175,
-						"h": 160
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 175,
-						"h": 160
-					},
-					"frame": {
-						"x": 1841,
-						"y": 626,
-						"w": 175,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_skillBlank01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 175,
-						"h": 160
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 175,
-						"h": 160
-					},
-					"frame": {
-						"x": 1841,
-						"y": 788,
-						"w": 175,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_levelBlank.png",
+					"filename": "element_level.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -969,8 +843,8 @@
 						"h": 216
 					},
 					"frame": {
-						"x": 1729,
-						"y": 950,
+						"x": 1319,
+						"y": 867,
 						"w": 181,
 						"h": 216
 					}
@@ -990,157 +864,52 @@
 						"h": 191
 					},
 					"frame": {
-						"x": 1729,
-						"y": 1168,
+						"x": 1319,
+						"y": 1085,
 						"w": 191,
 						"h": 191
 					}
 				},
 				{
-					"filename": "element_iconShield.png",
+					"filename": "element_iconPlaceholder.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 136,
-						"h": 167
+						"w": 312,
+						"h": 110
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 136,
-						"h": 167
-					},
-					"frame": {
-						"x": 1364,
-						"y": 1172,
-						"w": 136,
-						"h": 167
-					}
-				},
-				{
-					"filename": "element_toggleHoverOff.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 192,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 192,
-						"h": 108
+						"w": 312,
+						"h": 110
 					},
 					"frame": {
 						"x": 1502,
-						"y": 1302,
-						"w": 192,
-						"h": 108
+						"y": 885,
+						"w": 312,
+						"h": 110
 					}
 				},
 				{
-					"filename": "element_toggleNormalOff.png",
+					"filename": "element_textBlank.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 192,
-						"h": 108
+						"w": 312,
+						"h": 109
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 192,
-						"h": 108
+						"w": 312,
+						"h": 109
 					},
 					"frame": {
-						"x": 1696,
-						"y": 1361,
-						"w": 192,
-						"h": 108
-					}
-				},
-				{
-					"filename": "element_toggleCheckHover.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 119,
-						"h": 105
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 119,
-						"h": 105
-					},
-					"frame": {
-						"x": 1463,
-						"y": 353,
-						"w": 119,
-						"h": 105
-					}
-				},
-				{
-					"filename": "element_toggleCheckBlank.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 95,
-						"h": 105
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 95,
-						"h": 105
-					},
-					"frame": {
-						"x": 1912,
-						"y": 950,
-						"w": 95,
-						"h": 105
-					}
-				},
-				{
-					"filename": "element_buttonIndicator00.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 98,
-						"h": 101
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 98,
-						"h": 101
-					},
-					"frame": {
-						"x": 1912,
-						"y": 1057,
-						"w": 98,
-						"h": 101
-					}
-				},
-				{
-					"filename": "element_toggleCheckOff.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 119,
-						"h": 105
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 119,
-						"h": 105
-					},
-					"frame": {
-						"x": 923,
-						"y": 1204,
-						"w": 119,
-						"h": 105
+						"x": 1512,
+						"y": 997,
+						"w": 312,
+						"h": 109
 					}
 				},
 				{
@@ -1158,136 +927,52 @@
 						"h": 183
 					},
 					"frame": {
-						"x": 924,
-						"y": 1311,
+						"x": 1512,
+						"y": 1108,
 						"w": 183,
 						"h": 183
 					}
 				},
 				{
-					"filename": "element_skill02.png",
+					"filename": "element_levelBlank.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 174,
-						"h": 160
+						"w": 181,
+						"h": 216
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 174,
-						"h": 160
+						"w": 181,
+						"h": 216
 					},
 					"frame": {
-						"x": 924,
-						"y": 1496,
-						"w": 174,
-						"h": 160
+						"x": 1697,
+						"y": 1108,
+						"w": 181,
+						"h": 216
 					}
 				},
 				{
-					"filename": "element_skill03.png",
+					"filename": "element_toggleHoverOff.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 174,
-						"h": 160
+						"w": 192,
+						"h": 108
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 174,
-						"h": 160
+						"w": 192,
+						"h": 108
 					},
 					"frame": {
-						"x": 1109,
-						"y": 1283,
-						"w": 174,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_skillBlank00.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 174,
-						"h": 160
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 174,
-						"h": 160
-					},
-					"frame": {
-						"x": 1109,
-						"y": 1445,
-						"w": 174,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_skillBlank02.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 174,
-						"h": 160
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 174,
-						"h": 160
-					},
-					"frame": {
-						"x": 1285,
-						"y": 1341,
-						"w": 174,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_skillBlank03.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 174,
-						"h": 160
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 174,
-						"h": 160
-					},
-					"frame": {
-						"x": 1285,
-						"y": 1503,
-						"w": 174,
-						"h": 160
-					}
-				},
-				{
-					"filename": "element_iconHealth01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 170,
-						"h": 152
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 170,
-						"h": 152
-					},
-					"frame": {
-						"x": 1461,
-						"y": 1412,
-						"w": 170,
-						"h": 152
+						"x": 1816,
+						"y": 885,
+						"w": 192,
+						"h": 108
 					}
 				},
 				{
@@ -1305,115 +990,10 @@
 						"h": 108
 					},
 					"frame": {
-						"x": 1461,
-						"y": 1566,
+						"x": 1826,
+						"y": 995,
 						"w": 191,
 						"h": 108
-					}
-				},
-				{
-					"filename": "element_toggleLockedOff.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 191,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 191,
-						"h": 108
-					},
-					"frame": {
-						"x": 924,
-						"y": 1658,
-						"w": 191,
-						"h": 108
-					}
-				},
-				{
-					"filename": "element_iconHeart02.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 158,
-						"h": 161
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 158,
-						"h": 161
-					},
-					"frame": {
-						"x": 1117,
-						"y": 1607,
-						"w": 158,
-						"h": 161
-					}
-				},
-				{
-					"filename": "element_iconStar.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 161,
-						"h": 156
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 161,
-						"h": 156
-					},
-					"frame": {
-						"x": 1277,
-						"y": 1665,
-						"w": 161,
-						"h": 156
-					}
-				},
-				{
-					"filename": "element_iconHealth00.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 155,
-						"h": 163
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 155,
-						"h": 163
-					},
-					"frame": {
-						"x": 1440,
-						"y": 1676,
-						"w": 155,
-						"h": 163
-					}
-				},
-				{
-					"filename": "element_iconClock.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 149,
-						"h": 168
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 149,
-						"h": 168
-					},
-					"frame": {
-						"x": 1597,
-						"y": 1676,
-						"w": 149,
-						"h": 168
 					}
 				},
 				{
@@ -1431,8 +1011,8 @@
 						"h": 171
 					},
 					"frame": {
-						"x": 1654,
-						"y": 1471,
+						"x": 1880,
+						"y": 1105,
 						"w": 150,
 						"h": 171
 					}
@@ -1452,136 +1032,157 @@
 						"h": 169
 					},
 					"frame": {
-						"x": 1806,
-						"y": 1471,
+						"x": 923,
+						"y": 1204,
 						"w": 138,
 						"h": 169
 					}
 				},
 				{
-					"filename": "element_toggleLockedOn.png",
+					"filename": "element_skill01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 191,
-						"h": 108
+						"w": 175,
+						"h": 160
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 191,
-						"h": 108
+						"w": 175,
+						"h": 160
 					},
 					"frame": {
-						"x": 892,
-						"y": 1768,
-						"w": 191,
-						"h": 108
+						"x": 1063,
+						"y": 1159,
+						"w": 175,
+						"h": 160
 					}
 				},
 				{
-					"filename": "element_toggleCheckOn.png",
+					"filename": "element_iconClock.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 119,
-						"h": 105
+						"w": 149,
+						"h": 168
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 119,
-						"h": 105
+						"w": 149,
+						"h": 168
 					},
 					"frame": {
-						"x": 1085,
-						"y": 1770,
-						"w": 119,
-						"h": 105
+						"x": 924,
+						"y": 1375,
+						"w": 149,
+						"h": 168
 					}
 				},
 				{
-					"filename": "element_toggleRadioHover.png",
+					"filename": "element_iconHealth00.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 93,
-						"h": 102
+						"w": 155,
+						"h": 163
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 93,
-						"h": 102
+						"w": 155,
+						"h": 163
 					},
 					"frame": {
-						"x": 1922,
-						"y": 1160,
-						"w": 93,
-						"h": 102
+						"x": 924,
+						"y": 1545,
+						"w": 155,
+						"h": 163
 					}
 				},
 				{
-					"filename": "element_toggleRadioOff.png",
+					"filename": "element_skill00.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 93,
-						"h": 102
+						"w": 174,
+						"h": 160
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 93,
-						"h": 102
+						"w": 174,
+						"h": 160
 					},
 					"frame": {
-						"x": 1922,
-						"y": 1264,
-						"w": 93,
-						"h": 102
+						"x": 1075,
+						"y": 1321,
+						"w": 174,
+						"h": 160
 					}
 				},
 				{
-					"filename": "element_buttonIndicator02.png",
+					"filename": "element_skill02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 98,
-						"h": 101
+						"w": 174,
+						"h": 160
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 98,
-						"h": 101
+						"w": 174,
+						"h": 160
 					},
 					"frame": {
-						"x": 1890,
-						"y": 1368,
-						"w": 98,
-						"h": 101
+						"x": 1081,
+						"y": 1483,
+						"w": 174,
+						"h": 160
 					}
 				},
 				{
-					"filename": "element_volumeIndicator01.png",
+					"filename": "element_skill03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 54,
-						"h": 116
+						"w": 174,
+						"h": 160
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 54,
-						"h": 116
+						"w": 174,
+						"h": 160
 					},
 					"frame": {
-						"x": 1729,
-						"y": 774,
-						"w": 54,
-						"h": 116
+						"x": 1081,
+						"y": 1645,
+						"w": 174,
+						"h": 160
+					}
+				},
+				{
+					"filename": "element_iconHeart02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 158,
+						"h": 161
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 158,
+						"h": 161
+					},
+					"frame": {
+						"x": 921,
+						"y": 1710,
+						"w": 158,
+						"h": 161
 					}
 				},
 				{
@@ -1599,31 +1200,199 @@
 						"h": 116
 					},
 					"frame": {
-						"x": 1946,
-						"y": 1471,
+						"x": 866,
+						"y": 1746,
 						"w": 53,
 						"h": 116
 					}
 				},
 				{
-					"filename": "element_volumeIndicator02.png",
+					"filename": "element_skillBlank01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 102
+						"w": 175,
+						"h": 160
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 102
+						"w": 175,
+						"h": 160
 					},
 					"frame": {
-						"x": 1206,
-						"y": 1770,
-						"w": 44,
-						"h": 102
+						"x": 1251,
+						"y": 1278,
+						"w": 175,
+						"h": 160
+					}
+				},
+				{
+					"filename": "element_skillBlank00.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 160
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 160
+					},
+					"frame": {
+						"x": 1257,
+						"y": 1440,
+						"w": 174,
+						"h": 160
+					}
+				},
+				{
+					"filename": "element_skillBlank02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 160
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 160
+					},
+					"frame": {
+						"x": 1257,
+						"y": 1602,
+						"w": 174,
+						"h": 160
+					}
+				},
+				{
+					"filename": "element_toggleNormalOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 192,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 192,
+						"h": 108
+					},
+					"frame": {
+						"x": 1428,
+						"y": 1293,
+						"w": 192,
+						"h": 108
+					}
+				},
+				{
+					"filename": "element_skillBlank03.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 174,
+						"h": 160
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 160
+					},
+					"frame": {
+						"x": 1433,
+						"y": 1403,
+						"w": 174,
+						"h": 160
+					}
+				},
+				{
+					"filename": "element_iconStar.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 161,
+						"h": 156
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 161,
+						"h": 156
+					},
+					"frame": {
+						"x": 1433,
+						"y": 1565,
+						"w": 161,
+						"h": 156
+					}
+				},
+				{
+					"filename": "element_toggleLockedOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 191,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 191,
+						"h": 108
+					},
+					"frame": {
+						"x": 1257,
+						"y": 1764,
+						"w": 191,
+						"h": 108
+					}
+				},
+				{
+					"filename": "element_iconSkull.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 147,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 147,
+						"h": 151
+					},
+					"frame": {
+						"x": 1450,
+						"y": 1723,
+						"w": 147,
+						"h": 151
+					}
+				},
+				{
+					"filename": "element_toggleLockedOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 191,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 191,
+						"h": 108
+					},
+					"frame": {
+						"x": 1622,
+						"y": 1326,
+						"w": 191,
+						"h": 108
 					}
 				},
 				{
@@ -1641,10 +1410,220 @@
 						"h": 108
 					},
 					"frame": {
-						"x": 1806,
-						"y": 1642,
+						"x": 1609,
+						"y": 1436,
 						"w": 191,
 						"h": 108
+					}
+				},
+				{
+					"filename": "element_iconShield.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 136,
+						"h": 167
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 136,
+						"h": 167
+					},
+					"frame": {
+						"x": 1880,
+						"y": 1278,
+						"w": 136,
+						"h": 167
+					}
+				},
+				{
+					"filename": "element_volumeIndicator01.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 116
+					},
+					"frame": {
+						"x": 1815,
+						"y": 1326,
+						"w": 54,
+						"h": 116
+					}
+				},
+				{
+					"filename": "element_toggleCheckHover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 105
+					},
+					"frame": {
+						"x": 1802,
+						"y": 1447,
+						"w": 119,
+						"h": 105
+					}
+				},
+				{
+					"filename": "element_toggleCheckOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 105
+					},
+					"frame": {
+						"x": 1923,
+						"y": 1447,
+						"w": 119,
+						"h": 105
+					}
+				},
+				{
+					"filename": "element_toggleCheckOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 105
+					},
+					"frame": {
+						"x": 1609,
+						"y": 1546,
+						"w": 119,
+						"h": 105
+					}
+				},
+				{
+					"filename": "element_iconCash.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 115,
+						"h": 165
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 115,
+						"h": 165
+					},
+					"frame": {
+						"x": 1599,
+						"y": 1653,
+						"w": 115,
+						"h": 165
+					}
+				},
+				{
+					"filename": "element_volumeIndicator02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 44,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 44,
+						"h": 102
+					},
+					"frame": {
+						"x": 1730,
+						"y": 1546,
+						"w": 44,
+						"h": 102
+					}
+				},
+				{
+					"filename": "element_buttonIndicator00.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 98,
+						"h": 101
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 98,
+						"h": 101
+					},
+					"frame": {
+						"x": 1776,
+						"y": 1554,
+						"w": 98,
+						"h": 101
+					}
+				},
+				{
+					"filename": "element_buttonIndicator02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 98,
+						"h": 101
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 98,
+						"h": 101
+					},
+					"frame": {
+						"x": 1876,
+						"y": 1554,
+						"w": 98,
+						"h": 101
+					}
+				},
+				{
+					"filename": "element_toggleCheckBlank.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 105
+					},
+					"frame": {
+						"x": 1716,
+						"y": 1657,
+						"w": 95,
+						"h": 105
 					}
 				},
 				{
@@ -1662,14 +1641,14 @@
 						"h": 101
 					},
 					"frame": {
-						"x": 1748,
-						"y": 1752,
+						"x": 1813,
+						"y": 1657,
 						"w": 97,
 						"h": 101
 					}
 				},
 				{
-					"filename": "element_toggleRadioOn.png",
+					"filename": "element_toggleRadioBlank.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1683,8 +1662,29 @@
 						"h": 102
 					},
 					"frame": {
-						"x": 1847,
-						"y": 1752,
+						"x": 1912,
+						"y": 1657,
+						"w": 93,
+						"h": 102
+					}
+				},
+				{
+					"filename": "element_toggleRadioHover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 102
+					},
+					"frame": {
+						"x": 1716,
+						"y": 1764,
 						"w": 93,
 						"h": 102
 					}
@@ -1704,8 +1704,8 @@
 						"h": 71
 					},
 					"frame": {
-						"x": 1942,
-						"y": 1752,
+						"x": 1081,
+						"y": 1807,
 						"w": 67,
 						"h": 71
 					}
@@ -1725,10 +1725,94 @@
 						"h": 71
 					},
 					"frame": {
-						"x": 1932,
-						"y": 105,
+						"x": 1150,
+						"y": 1807,
 						"w": 67,
 						"h": 71
+					}
+				},
+				{
+					"filename": "element_toggleRadioOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 102
+					},
+					"frame": {
+						"x": 1811,
+						"y": 1764,
+						"w": 93,
+						"h": 102
+					}
+				},
+				{
+					"filename": "element_toggleRadioOn - Copy.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 102
+					},
+					"frame": {
+						"x": 1906,
+						"y": 1761,
+						"w": 93,
+						"h": 102
+					}
+				},
+				{
+					"filename": "element_toggleRadioOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 102
+					},
+					"frame": {
+						"x": 1906,
+						"y": 1761,
+						"w": 93,
+						"h": 102
+					}
+				},
+				{
+					"filename": "element_meterOverlay.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 368,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 181,
+						"y": 0,
+						"w": 6,
+						"h": 47
+					},
+					"frame": {
+						"x": 986,
+						"y": 145,
+						"w": 6,
+						"h": 47
 					}
 				}
 			]
@@ -1737,6 +1821,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:93571a5492ab0eec1fd3e46ac7eeffff:5c8cd8ca17b7eb225a591e5f1fd70c43:5b2f3c13e8b86e4c74f43dc8b276d9b9$"
+		"smartupdate": "$TexturePacker:SmartUpdate:6395914e1945da6f9edfaa2ce92bb8b5:80f3732048ab1a642d840070fa92d083:5b2f3c13e8b86e4c74f43dc8b276d9b9$"
 	}
 }

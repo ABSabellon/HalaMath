@@ -48,7 +48,7 @@ export default class extends Phaser.Scene {
       this.openWindow(mathPopUp)       
     })
 
-    var tools = this.add.sprite( this.game.renderer.width * 0.8, this.game.renderer.height * 0.93, 'elems','element_buttonDock.png').setDepth(1)
+    var tools = this.add.sprite( this.game.renderer.width * 0.8, this.game.renderer.height * 0.97, 'elems','element_buttonDock.png').setDepth(1)
     tools.setScale(0.3)
     
 
