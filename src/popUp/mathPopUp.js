@@ -8,7 +8,16 @@ export default class extends Phaser.Scene {
   }
 
   init () {
-    this.sum = 0;
+    this.sumLeft = 0;
+    this.sumRight = 0;
+    this.thousands_left_text = 0;
+    this.hundreds_left_text = 0;
+    this.tens_left_text = 0;
+    this.ones_left_text = 0;
+    this.thousands_right_text = 0;
+    this.hundreds_right_text = 0;
+    this.tens_right_text = 0;
+    this.ones_right_text = 0;
     this.fruitsConf = [
       {x: this.game.renderer.width * 0.25, y: this.game.renderer.height * 0.6, atlas: 'testers', atlasKey: 'ent_fruit_1.png'},
       {x: this.game.renderer.width * 0.75, y: this.game.renderer.height * 0.6, atlas: 'testers', atlasKey: 'ent_fruit_2.png'}
@@ -21,19 +30,16 @@ export default class extends Phaser.Scene {
   }
 
   create () {
-    //const for center of scene
-    const screenCenterX = this.cameras.main.worldView.x + this.cameras.main.width / 2;
-    const screenCenterY = this.cameras.main.worldView.y + this.cameras.main.height / 2;
     
     // Math Overlay
-    var math = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.40, 'windows','window_big.png').setDepth(1);   
+    var math = this.add.sprite( this.game.renderer.width / 2, this.game.renderer.height * 0.40, 'windows','window_bigNoTitle.png').setDepth(1);   
     math.setScale(0.47) 
 
-    var mathText = this.add.sprite(screenCenterX, math.height * .37, 'windows', 'window_completeTextArea.png').setDepth(2)
+    var mathText = this.add.sprite(this.game.renderer.width / 2, math.height * .37, 'windows', 'window_completeTextArea.png').setDepth(2)
     mathText.setScale(0.6)
 
-    var mathAccept = this.add.sprite(this.game.renderer.width * 0.37 , this.game.renderer.height* 0.75, 'btns', 'btn_yes00.png').setDepth(2)
-    mathAccept.setScale(0.5)
+    var mathAccept = this.add.sprite((this.game.renderer.width /2) - 100 , this.game.renderer.height* 0.75, 'btns', 'btn_yes00.png').setDepth(2)
+    mathAccept.setScale(0.45)
     mathAccept.setInteractive()
 
     mathAccept.on("pointerover",() =>{
@@ -48,8 +54,8 @@ export default class extends Phaser.Scene {
       console.log("You Toucha My BAGUETTE!")     
     })
 
-    var mathCancel = this.add.sprite(this.game.renderer.width * 0.63 , this.game.renderer.height* 0.75, 'btns', 'btn_no00.png').setDepth(2)
-    mathCancel.setScale(0.5)
+    var mathCancel = this.add.sprite((this.game.renderer.width /2) + 100  , this.game.renderer.height* 0.75, 'btns', 'btn_no00.png').setDepth(2)
+    mathCancel.setScale(0.45)
     mathCancel.setInteractive()
 
     mathCancel.on("pointerover",() =>{
@@ -61,25 +67,25 @@ export default class extends Phaser.Scene {
     })
 
     mathCancel.on("pointerup", () =>{  
-      console.log("You Toucha My BAGUETTE!")     
+      scene.scene.remove(handle);    
     })
 
     //NPC Happiness
 
-    var happy= this.add.sprite((this.game.renderer.width / 2) - 2 , 45, 'elems', 'element_faveBlank.png').setDepth(2)
-    happy.setScale(0.39)
+    var happy= this.add.sprite((this.game.renderer.width / 2) , 45, 'elems', 'element_faveBlank.png').setDepth(2)
+    happy.setScale(0.45)
 
-    var happyMeter= this.add.sprite((this.game.renderer.width / 2) - 2 , 41, 'elems', 'element_health01.png').setDepth(2)
-    happyMeter.setScale(0.39)
+    var happyMeter= this.add.sprite((this.game.renderer.width / 2) , 41, 'elems', 'element_health01.png').setDepth(2)
+    happyMeter.setScale(0.45)
     
-    var happyLiner= this.add.sprite((this.game.renderer.width / 2) - 2 , 41, 'elems', 'element_meterOverlay.png').setDepth(2)
-    happyLiner.setScale(0.39)
+    var happyLiner= this.add.sprite((this.game.renderer.width / 2) , 41, 'elems', 'element_meterOverlay.png').setDepth(2)
+    happyLiner.setScale(0.45)
 
-    var happyHeart= this.add.sprite((this.game.renderer.width / 2)  + 98 , 41, 'elems', 'element_iconHealth01.png').setDepth(3)
-    happyHeart.setScale(0.3)
+    var happyHeart= this.add.sprite((this.game.renderer.width / 2)  + 114, 41, 'elems', 'element_iconHealth01.png').setDepth(3)
+    happyHeart.setScale(0.35)
 
-    var happyHeartGrey= this.add.sprite((this.game.renderer.width / 2)  - 100 , 41, 'elems', 'element_iconHealth02.png').setDepth(3)
-    happyHeartGrey.setScale(0.3)
+    var happyHeartGrey= this.add.sprite((this.game.renderer.width / 2)  - 114, 41, 'elems', 'element_iconHealth02.png').setDepth(3)
+    happyHeartGrey.setScale(0.35)
     
 
     //Left Fruits
@@ -102,7 +108,7 @@ export default class extends Phaser.Scene {
     
     //Math Operator
 
-    var mathPlus = this.add.sprite(screenCenterX , this.game.renderer.height* 0.33, 'btns', 'btn_plus02.png').setDepth(2)
+    var mathPlus = this.add.sprite(this.game.renderer.width / 2 , this.game.renderer.height* 0.33, 'btns', 'btn_plus02.png').setDepth(2)
     mathPlus.setScale(0.4)
 
     //Right Fruits
@@ -126,90 +132,37 @@ export default class extends Phaser.Scene {
 
 
     //Redboxes LEFT
+    var textOffsetY = -15;
+    var textOffsetX = -10
+
     this.box_thousands_left = this.physics.add.image(163 , 194, 'redbox').setDepth(3);
     this.box_hundreds_left = this.physics.add.sprite(213 , 194, 'redbox').setDepth(3);
     this.box_tens_left = this.physics.add.sprite(263 , 194, 'redbox').setDepth(3);
     this.box_ones_left = this.physics.add.sprite(313 , 194, 'redbox').setDepth(3);
 
-    this.outputText = this.add.text(200,255, this.sum, {fontSize: 32}).setDepth(3);
+    this.box_thousands_left_text = this.add.text(163 + textOffsetX, 194 + textOffsetY, this.thousands_left_text, {fontSize: 32}).setDepth(3);
+    this.box_hundreds_left_text = this.add.text(213 + textOffsetX, 194 + textOffsetY, this.hundreds_left_text, {fontSize: 32}).setDepth(3);
+    this.box_tens_left_text = this.add.text(263 + textOffsetX, 194 + textOffsetY, this.tens_left_text, {fontSize: 32}).setDepth(3);
+    this.box_ones_left_text = this.add.text(313 + textOffsetX, 194 + textOffsetY, this.ones_left_text, {fontSize: 32}).setDepth(3);
+
+    this.outputTextLeft = this.add.text(200,255, this.sumLeft, {fontSize: 32}).setDepth(3);
 
     //Redboxes RIGHT
-    // this.box_thousands_right = this.physics.add.image(478 , 194, 'redbox').setDepth(3);
-    // this.box_hundreds_right = this.physics.add.sprite(528 , 194, 'redbox').setDepth(3);
-    // this.box_tens_right = this.physics.add.sprite(578 , 194, 'redbox').setDepth(3);
-    // this.box_ones_right = this.physics.add.sprite(628 , 194, 'redbox').setDepth(3);
+    this.box_thousands_right = this.physics.add.image(478 , 194, 'redbox').setDepth(3);
+    this.box_hundreds_right = this.physics.add.sprite(528 , 194, 'redbox').setDepth(3);
+    this.box_tens_right = this.physics.add.sprite(578 , 194, 'redbox').setDepth(3);
+    this.box_ones_right = this.physics.add.sprite(628 , 194, 'redbox').setDepth(3);
 
-    // this.outputTextRight = this.add.text(495,255, this.sum, {fontSize: 32}).setDepth(3);
+    this.box_thousands_right_text = this.add.text(478 + textOffsetX, 194 + textOffsetY, this.thousands_right_text, {fontSize: 32}).setDepth(3);
+    this.box_hundreds_right_text = this.add.text(528 + textOffsetX, 194 + textOffsetY, this.hundreds_right_text, {fontSize: 32}).setDepth(3);
+    this.box_tens_right_text = this.add.text(578 + textOffsetX, 194 + textOffsetY, this.tens_right_text, {fontSize: 32}).setDepth(3);
+    this.box_ones_right_text = this.add.text(628 + textOffsetX, 194 + textOffsetY, this.ones_right_text, {fontSize: 32}).setDepth(3);
+
+    this.outputTextRight = this.add.text(495,255, this.sumRight, {fontSize: 32}).setDepth(3);
 
     //fruit draggable
     this.fruitsConf.map((conf, index) => {
-      var fruit = this.physics.add.sprite(conf.x, conf.y, conf.atlas, conf.atlasKey).setDepth(3).setScale(0.5).setInteractive();
-      this.input.setDraggable(fruit);
-
-      fruit.on('pointerdown', (pointer) => {
-        fruit.setTint(0xff0000);
-        this.cloneSprite(index);
-      });
-
-      fruit.on('pointerout', (pointer) => {
-        fruit.clearTint();
-      });
-  
-      fruit.on('pointerup', (pointer) => {
-        fruit.clearTint();
-      });
-
-      this.physics.add.overlap(
-        this.box_thousands_left, 
-        fruit, 
-        function(box, fruit){
-          this.sum += 1000;
-          box.setTexture('bluebox');
-          this.outputText.setText(this.sum);
-          fruit.destroy();
-        },
-        null,
-        this
-      );
-
-      this.physics.add.overlap(
-        this.box_hundreds_left, 
-        fruit, 
-        function(box, fruit){
-          this.sum += 100;
-          box.setTexture('bluebox');
-          this.outputText.setText(this.sum);
-          fruit.destroy();
-        }, 
-        null,
-        this
-      );
-
-      this.physics.add.overlap(
-        this.box_tens_left, 
-        fruit, 
-        function(box, fruit){
-          this.sum += 10;
-          box.setTexture('bluebox');
-          this.outputText.setText(this.sum);
-          fruit.destroy();
-        }, 
-        null,
-        this
-      );
-
-      this.physics.add.overlap(
-        this.box_ones_left, 
-        fruit, 
-        function(box, fruit){
-          this.sum += 1;
-          box.setTexture('bluebox');
-          this.outputText.setText(this.sum);
-          fruit.destroy();
-        }, 
-        null,
-        this
-      );
+      this.createFruit(index);
     });
 
     this.input.on('dragstart', (pointer, gameObject) => {
@@ -233,29 +186,33 @@ export default class extends Phaser.Scene {
       this.scene.bringToTop();
   }
     
-  cloneSprite (index) {
+  createFruit (index) {
+    var fruit = this.physics.add.sprite(this.fruitsConf[index].x, this.fruitsConf[index].y, this.fruitsConf[index].atlas, this.fruitsConf[index].atlasKey).setDepth(3).setScale(0.5).setInteractive();
+    this.input.setDraggable(fruit);
+    fruit.on('pointerdown', (pointer) => {
+      fruit.setTint(0xff0000);
+      this.createFruit(index);
+    });
+    fruit.on('pointerout', (pointer) => {
+      fruit.clearTint();
+    });
+    fruit.on('pointerup', (pointer) => {
+      fruit.clearTint();
+    });
 
-    var clone = this.physics.add.sprite(this.fruitsConf[index].x, this.fruitsConf[index].y, this.fruitsConf[index].atlas, this.fruitsConf[index].atlasKey).setDepth(3).setScale(0.5).setInteractive();
-    this.input.setDraggable(clone);
-    clone.on('pointerdown', (pointer) => {
-      clone.setTint(0xff0000);
-      this.cloneSprite(index);
-    });
-    clone.on('pointerout', (pointer) => {
-      clone.clearTint();
-    });
-    clone.on('pointerup', (pointer) => {
-      clone.clearTint();
-    });
-
+    //Left drag
     this.physics.add.overlap(
       this.box_thousands_left, 
-      clone, 
-      function(box, fruit){
-        this.sum += 1000;
-        box.setTexture('bluebox');
-        this.outputText.setText(this.sum);
-        fruit.destroy();
+      fruit, 
+      function(box, currentFruit){
+        if(this.thousands_left_text < 9){
+          this.sumLeft += 1000;
+          box.setTexture('bluebox');
+          this.outputTextLeft.setText(this.sumLeft);
+          this.thousands_left_text++;
+          this.box_thousands_left_text.setText(this.thousands_left_text);
+        }
+        currentFruit.destroy();
       },
       null,
       this
@@ -263,12 +220,16 @@ export default class extends Phaser.Scene {
 
     this.physics.add.overlap(
       this.box_hundreds_left, 
-      clone, 
-      function(box, fruit){
-        this.sum += 100;
-        box.setTexture('bluebox');
-        this.outputText.setText(this.sum);
-        fruit.destroy();
+      fruit, 
+      function(box, currentFruit){
+        if(this.hundreds_left_text < 9){
+          this.sumLeft += 100;
+          box.setTexture('bluebox');
+          this.outputTextLeft.setText(this.sumLeft);
+          this.hundreds_left_text++;
+          this.box_hundreds_left_text.setText(this.hundreds_left_text);
+        }
+        currentFruit.destroy();
       }, 
       null,
       this
@@ -276,12 +237,16 @@ export default class extends Phaser.Scene {
 
     this.physics.add.overlap(
       this.box_tens_left, 
-      clone, 
-      function(box, fruit){
-        this.sum += 10;
-        box.setTexture('bluebox');
-        this.outputText.setText(this.sum);
-        fruit.destroy();
+      fruit, 
+      function(box, currentFruit){
+        if(this.tens_left_text < 9){
+          this.sumLeft += 10;
+          box.setTexture('bluebox');
+          this.outputTextLeft.setText(this.sumLeft);
+          this.tens_left_text++;
+          this.box_tens_left_text.setText(this.tens_left_text);
+        }
+        currentFruit.destroy();
       }, 
       null,
       this
@@ -289,16 +254,91 @@ export default class extends Phaser.Scene {
 
     this.physics.add.overlap(
       this.box_ones_left, 
-      clone, 
-      function(box, fruit){
-        this.sum += 1;
-        box.setTexture('bluebox');
-        this.outputText.setText(this.sum);
-        fruit.destroy();
+      fruit, 
+      function(box, currentFruit){
+        if(this.ones_left_text < 9){
+          this.sumLeft += 1;
+          box.setTexture('bluebox');
+          this.outputTextLeft.setText(this.sumLeft);
+          this.ones_left_text++;
+          this.box_ones_left_text.setText(this.ones_left_text);
+        }
+        currentFruit.destroy();
       }, 
       null,
       this
     );
+
+    //Right Drag
+    this.physics.add.overlap(
+      this.box_thousands_right, 
+      fruit, 
+      function(box, currentFruit){
+        if(this.thousands_right_text < 9){
+          this.sumRight += 1000;
+          box.setTexture('bluebox');
+          this.outputTextRight.setText(this.sumRight);
+          this.thousands_right_text++;
+          this.box_thousands_right_text.setText(this.thousands_right_text);
+        }
+        currentFruit.destroy();
+      },
+      null,
+      this
+    );
+
+    this.physics.add.overlap(
+      this.box_hundreds_right, 
+      fruit, 
+      function(box, currentFruit){
+        if(this.hundreds_right_text < 9){
+          this.sumRight += 100;
+          box.setTexture('bluebox');
+          this.outputTextRight.setText(this.sumRight);
+          this.hundreds_right_text++;
+          this.box_hundreds_right_text.setText(this.hundreds_right_text);
+        }
+        currentFruit.destroy();
+      }, 
+      null,
+      this
+    );
+
+    this.physics.add.overlap(
+      this.box_tens_right, 
+      fruit, 
+      function(box, currentFruit){
+        if(this.tens_right_text < 9){
+          this.sumRight += 10;
+          box.setTexture('bluebox');
+          this.outputTextRight.setText(this.sumRight);
+          this.tens_right_text++;
+          this.box_tens_right_text.setText(this.tens_right_text);
+        }
+        currentFruit.destroy();
+      }, 
+      null,
+      this
+    );
+
+    this.physics.add.overlap(
+      this.box_ones_right, 
+      fruit, 
+      function(box, currentFruit){
+        if(this.ones_right_text < 9){
+          this.sumRight += 1;
+          box.setTexture('bluebox');
+          this.outputTextRight.setText(this.sumRight);
+          this.ones_right_text++;
+          this.box_ones_right_text.setText(this.ones_right_text);
+        }
+        currentFruit.destroy();
+      }, 
+      null,
+      this
+    );
+
+    return fruit;
   }
    
   closeWindow(func){
