@@ -158,7 +158,7 @@ export default class extends Phaser.Scene {
     this.box_tens_right_text = this.add.text(578 + textOffsetX, 194 + textOffsetY, this.tens_right_text, {fontSize: 32}).setDepth(3);
     this.box_ones_right_text = this.add.text(628 + textOffsetX, 194 + textOffsetY, this.ones_right_text, {fontSize: 32}).setDepth(3);
 
-    this.outputTextRight = this.add.text(495,255, this.sumRight, {fontSize: 32}).setDepth(3);
+    this.outputTextRight = this.add.text(510,255, this.sumRight, {fontSize: 32}).setDepth(3);
 
     //fruit draggable
     this.fruitsConf.map((conf, index) => {
